@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<courses>
+  <course id="javascript" name="JavaScript Fundamentals">
+    <description>Learn the basics of JavaScript programming language</description>
+    <topics>
+      <topic id="variables" title="Variables and Data Types">
+        <content>
+          <![CDATA[
+          <h3>Variables in JavaScript</h3>
+          <p>Variables are containers for storing data values. In JavaScript, you can declare variables using:</p>
+          <ul>
+            <li><strong>var</strong> - Function scoped (older way)</li>
+            <li><strong>let</strong> - Block scoped (recommended)</li>
+            <li><strong>const</strong> - Block scoped, cannot be reassigned</li>
+          </ul>
+          <h4>Data Types:</h4>
+          <ul>
+            <li>String: "Hello World"</li>
+            <li>Number: 42, 3.14</li>
+            <li>Boolean: true, false</li>
+            <li>Array: [1, 2, 3]</li>
+            <li>Object: {name: "John", age: 30}</li>
+          </ul>
+          <pre><code>let name = "Alice";
+const age = 25;
+var isStudent = true;</code></pre>
+          ]]>
+        </content>
+      </topic>
+      <topic id="functions" title="Functions">
+        <content>
+          <![CDATA[
+          <h3>JavaScript Functions</h3>
+          <p>Functions are reusable blocks of code that perform specific tasks.</p>
+          <h4>Function Declaration:</h4>
+          <pre><code>function greet(name) {
+    return "Hello, " + name + "!";
+}
+
+console.log(greet("World")); // Hello, World!</code></pre>
+          <h4>Arrow Functions (ES6):</h4>
+          <pre><code>const add = (a, b) => a + b;
+console.log(add(5, 3)); // 8</code></pre>
+          <h4>Function Types:</h4>
+          <ul>
+            <li>Named functions</li>
+            <li>Anonymous functions</li>
+            <li>Arrow functions</li>
+            <li>IIFE (Immediately Invoked Function Expression)</li>
+          </ul>
+          ]]>
+        </content>
+      </topic>
+      <topic id="dom" title="DOM Manipulation">
+        <content>
+          <![CDATA[
+          <h3>Document Object Model (DOM)</h3>
+          <p>The DOM represents the HTML document as a tree structure that JavaScript can manipulate.</p>
+          <h4>Selecting Elements:</h4>
+          <pre><code>// By ID
+const element = document.getElementById('myId');
+
+// By Class
+const elements = document.getElementsByClassName('myClass');
+
+// By Query Selector
+const element = document.querySelector('.myClass');
+const elements = document.querySelectorAll('div');</code></pre>
+          <h4>Modifying Elements:</h4>
+          <pre><code>// Change content
+element.innerHTML = '<strong>New content</strong>';
+element.textContent = 'Plain text';
+
+// Change attributes
+element.setAttribute('class', 'newClass');
+element.style.color = 'red';</code></pre>
+          ]]>
+        </content>
+      </topic>
+    </topics>
+  </course>
+  
+  <course id="python" name="Python Programming">
+    <description>Master Python programming from basics to advanced concepts</description>
+    <topics>
+      <topic id="syntax" title="Python Syntax Basics">
+        <content>
+          <![CDATA[
+          <h3>Python Syntax</h3>
+          <p>Python uses indentation to define code blocks instead of curly braces.</p>
+          <h4>Variables and Print:</h4>
+          <pre><code>name = "Python"
+age = 30
+print(f"Hello, {name}! Age: {age}")</code></pre>
+          <h4>Data Types:</h4>
+          <ul>
+            <li>int: 42</li>
+            <li>float: 3.14</li>
+            <li>str: "Hello"</li>
+            <li>bool: True, False</li>
+            <li>list: [1, 2, 3]</li>
+            <li>dict: {"key": "value"}</li>
+          </ul>
+          <h4>Control Flow:</h4>
+          <pre><code>if age >= 18:
+    print("Adult")
+elif age >= 13:
+    print("Teenager")
+else:
+    print("Child")</code></pre>
+          ]]>
+        </content>
+      </topic>
+      <topic id="loops" title="Loops and Iterations">
+        <content>
+          <![CDATA[
+          <h3>Python Loops</h3>
+          <h4>For Loops:</h4>
+          <pre><code># Iterate over a list
+fruits = ["apple", "banana", "orange"]
+for fruit in fruits:
+    print(fruit)
+
+# Range-based loop
+for i in range(5):
+    print(i)  # 0, 1, 2, 3, 4</code></pre>
+          <h4>While Loops:</h4>
+          <pre><code>count = 0
+while count < 5:
+    print(f"Count: {count}")
+    count += 1</code></pre>
+          <h4>List Comprehensions:</h4>
+          <pre><code># Create a list of squares
+squares = [x**2 for x in range(10)]
+# [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]</code></pre>
+          ]]>
+        </content>
+      </topic>
+    </topics>
+  </course>
+  
+  <course id="react" name="React Development">
+    <description>Build modern web applications with React</description>
+    <topics>
+      <topic id="components" title="React Components">
+        <content>
+          <![CDATA[
+          <h3>React Components</h3>
+          <p>Components are the building blocks of React applications.</p>
+          <h4>Functional Components:</h4>
+          <pre><code>function Welcome(props) {
+    return <h1>Hello, {props.name}!</h1>;
+}
+
+// Arrow function component
+const Welcome = (props) => {
+    return <h1>Hello, {props.name}!</h1>;
+};</code></pre>
+          <h4>Class Components:</h4>
+          <pre><code>class Welcome extends React.Component {
+    render() {
+        return <h1>Hello, {this.props.name}!</h1>;
+    }
+}</code></pre>
+          <h4>Using Components:</h4>
+          <pre><code>function App() {
+    return (
+        <div>
+            <Welcome name="Alice" />
+            <Welcome name="Bob" />
+        </div>
+    );
+}</code></pre>
+          ]]>
+        </content>
+      </topic>
+      <topic id="hooks" title="React Hooks">
+        <content>
+          <![CDATA[
+          <h3>React Hooks</h3>
+          <p>Hooks let you use state and other React features in functional components.</p>
+          <h4>useState Hook:</h4>
+          <pre><code>import { useState } from 'react';
+
+function Counter() {
+    const [count, setCount] = useState(0);
+    
+    return (
+        <div>
+            <p>Count: {count}</p>
+            <button onClick={() => setCount(count + 1)}>
+                Increment
+            </button>
+        </div>
+    );
+}</code></pre>
+          <h4>useEffect Hook:</h4>
+          <pre><code>import { useEffect, useState } from 'react';
+
+function UserProfile({ userId }) {
+    const [user, setUser] = useState(null);
+    
+    useEffect(() => {
+        fetchUser(userId).then(setUser);
+    }, [userId]);
+    
+    return user ? <div>{user.name}</div> : <div>Loading...</div>;
+}</code></pre>
+          ]]>
+        </content>
+      </topic>
+    </topics>
+  </course>
+</courses>
