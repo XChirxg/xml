@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<learning_data>
+    <!-- Template XML structure for Revise Learning App -->
+    <!-- Repository: https://github.com/xchirxg/xml -->
+    
+    <subjects>
+        <!-- Physics Subject -->
+        <subject id="physics" name="Physics">
+            <units>
+                <unit id="mechanics" name="Mechanics">
+                    <topics>
+                        <topic id="motion" name="Motion" icon="mdi:car-speed-limiter" description="Laws of motion and kinematics">
+                            <cards>
+                                <card type="content" title="What is Motion?">
+                                    <content>Motion is the change in position of an object with respect to time. It is described relative to a reference frame.</content>
+                                </card>
+                                <card type="content" title="Types of Motion">
+                                    <content>1. Linear Motion - Motion in a straight line
+2. Circular Motion - Motion in a circular path  
+3. Rotational Motion - Motion about an axis
+4. Oscillatory Motion - Repetitive back and forth motion</content>
+                                </card>
+                                <card type="content" title="Displacement vs Distance">
+                                    <content>Distance is the total path traveled, while displacement is the shortest distance between initial and final positions. Distance is scalar, displacement is vector.</content>
+                                </card>
+                                <card type="content" title="Velocity and Speed">
+                                    <content>Speed is the rate of change of distance (scalar). Velocity is the rate of change of displacement (vector). Average velocity = displacement/time.</content>
+                                </card>
+                                <card type="content" title="Acceleration">
+                                    <content>Acceleration is the rate of change of velocity. It is a vector quantity. When velocity increases, acceleration is positive. When velocity decreases, acceleration is negative (deceleration).</content>
+                                </card>
+                                <card type="quiz" question="What is the difference between distance and displacement?">
+                                    <options>
+                                        <option>Distance is vector, displacement is scalar</option>
+                                        <option correct="true">Distance is total path, displacement is shortest path</option>
+                                        <option>Distance is negative, displacement is positive</option>
+                                        <option>There is no difference</option>
+                                    </options>
+                                </card>
+                                <card type="content" title="Equations of Motion">
+                                    <content>Three equations of motion for uniform acceleration:
+v = u + at
+s = ut + ½at²
+v² = u² + 2as
+
+Where: v = final velocity, u = initial velocity, a = acceleration, t = time, s = displacement</content>
+                                </card>
+                                <card type="content" title="Graphical Analysis">
+                                    <content>Position-time graphs show displacement vs time. Slope gives velocity.
+Velocity-time graphs show velocity vs time. Slope gives acceleration. Area under curve gives displacement.</content>
+                                </card>
+                                <card type="content" title="Projectile Motion">
+                                    <content>Motion of objects thrown at an angle to horizontal. It has two components:
+- Horizontal: uniform velocity (no acceleration)
+- Vertical: uniformly accelerated motion due to gravity</content>
+                                </card>
+                                <card type="content" title="Circular Motion">
+                                    <content>Motion in a circular path at constant speed. Though speed is constant, velocity changes due to direction change. Centripetal acceleration = v²/r directed towards center.</content>
+                                </card>
+                                <card type="quiz" question="What is centripetal acceleration?">
+                                    <options>
+                                        <option>Acceleration away from center</option>
+                                        <option correct="true">Acceleration towards center of circular path</option>
+                                        <option>Acceleration tangent to circle</option>
+                                        <option>There is no acceleration in circular motion</option>
+                                    </options>
+                                </card>
+                            </cards>
+                        </topic>
+                        
+                        <topic id="forces" name="Forces" icon="mdi:arrow-all" description="Newton's laws and force interactions">
+                            <cards>
+                                <card type="content" title="What is Force?">
+                                    <content>Force is a push or pull that can change the motion of an object. It is a vector quantity measured in Newtons (N). Force = mass × acceleration</content>
+                                </card>
+                                <card type="content" title="Newton's First Law">
+                                    <content>An object at rest stays at rest, and an object in motion stays in motion at constant velocity, unless acted upon by an external force. Also called Law of Inertia.</content>
+                                </card>
+                                <card type="content" title="Newton's Second Law">
+                                    <content>The acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass. F = ma</content>
+                                </card>
+                                <card type="content" title="Newton's Third Law">
+                                    <content>For every action, there is an equal and opposite reaction. Forces always occur in pairs acting on different objects.</content>
+                                </card>
+                                <card type="content" title="Types of Forces">
+                                    <content>1. Contact Forces: friction, normal force, tension
+2. Non-contact Forces: gravity, electromagnetic, nuclear
+3. Applied Force: force applied by a person or object
+4. Spring Force: force exerted by compressed or stretched spring</content>
+                                </card>
+                                <card type="quiz" question="According to Newton's Third Law, if you push a wall with 50N force, what force does the wall exert on you?">
+                                    <options>
+                                        <option>0N</option>
+                                        <option>25N in same direction</option>
+                                        <option correct="true">50N in opposite direction</option>
+                                        <option>100N in opposite direction</option>
+                                    </options>
+                                </card>
+                            </cards>
+                        </topic>
+                    </topics>
+                </unit>
+                
+                <unit id="waves" name="Waves and Sound">
+                    <topics>
+                        <topic id="wave_motion" name="Wave Motion" icon="mdi:sine-wave" description="Properties and types of waves">
+                            <cards>
+                                <card type="content" title="What are Waves?">
+                                    <content>Waves are disturbances that transfer energy from one place to another without transferring matter. Examples: sound waves, light waves, water waves.</content>
+                                </card>
+                                <card type="content" title="Types of Waves">
+                                    <content>1. Mechanical Waves: require medium (sound, water waves)
+2. Electromagnetic Waves: don't require medium (light, radio)
+3. Transverse Waves: vibration perpendicular to direction
+4. Longitudinal Waves: vibration parallel to direction</content>
+                                </card>
+                                <card type="content" title="Wave Properties">
+                                    <content>Amplitude: maximum displacement from rest position
+Wavelength: distance between two consecutive peaks
+Frequency: number of waves per second (Hz)
+Period: time for one complete wave
+Speed = frequency × wavelength</content>
+                                </card>
+                                <card type="content" title="Wave Behavior">
+                                    <content>Reflection: bouncing back from a surface
+Refraction: bending when entering new medium
+Interference: combining of two or more waves
+Diffraction: bending around obstacles</content>
+                                </card>
+                                <card type="content" title="Sound Waves">
+                                    <content>Sound is a longitudinal mechanical wave. It travels through air at approximately 343 m/s at room temperature. Sound cannot travel through vacuum.</content>
+                                </card>
+                                <card type="quiz" question="What happens to sound waves in a vacuum?">
+                                    <options>
+                                        <option>They travel faster</option>
+                                        <option>They travel slower</option>
+                                        <option correct="true">They cannot travel at all</option>
+                                        <option>They become electromagnetic waves</option>
+                                    </options>
+                                </card>
+                            </cards>
+                        </topic>
+                    </topics>
+                </unit>
+            </units>
+        </subject>
+        
+        <!-- Mathematics Subject -->
+        <subject id="mathematics" name="Mathematics">
+            <units>
+                <unit id="algebra" name="Algebra">
+                    <topics>
+                        <topic id="linear_equations" name="Linear Equations" icon="mdi:function" description="Solving equations with one variable">
+                            <cards>
+                                <card type="content" title="What are Linear Equations?">
+                                    <content>A linear equation is an equation in which the highest power of the variable is 1. General form: ax + b = 0, where a ≠ 0.</content>
+                                </card>
+                                <card type="content" title="Solving Linear Equations">
+                                    <content>Steps to solve ax + b = c:
+1. Subtract b from both sides: ax = c - b
+2. Divide both sides by a: x = (c - b)/a
+Always perform same operation on both sides.</content>
+                                </card>
+                                <card type="content" title="Examples">
+                                    <content>Solve: 3x + 5 = 14
+Step 1: 3x = 14 - 5 = 9
+Step 2: x = 9/3 = 3
+
+Solve: 2x - 7 = 1
+Step 1: 2x = 1 + 7 = 8  
+Step 2: x = 8/2 = 4</content>
+                                </card>
+                                <card type="content" title="Word Problems">
+                                    <content>Steps for word problems:
+1. Read problem carefully
+2. Identify the unknown (assign variable)
+3. Write equation based on given information
+4. Solve the equation
+5. Check if answer makes sense</content>
+                                </card>
+                                <card type="content" title="Types of Solutions">
+                                    <content>1. Unique Solution: exactly one value of x
+2. No Solution: leads to contradiction (e.g., 0 = 5)
+3. Infinite Solutions: equation becomes identity (e.g., 0 = 0)</content>
+                                </card>
+                                <card type="quiz" question="Solve: 4x + 3 = 19">
+                                    <options>
+                                        <option>x = 3</option>
+                                        <option correct="true">x = 4</option>
+                                        <option>x = 5</option>
+                                        <option>x = 6</option>
+                                    </options>
+                                </card>
+                            </cards>
+                        </topic>
+                        
+                        <topic id="quadratic_equations" name="Quadratic Equations" icon="mdi:function-variant" description="Equations with degree 2">
+                            <cards>
+                                <card type="content" title="What are Quadratic Equations?">
+                                    <content>A quadratic equation is a polynomial equation of degree 2. Standard form: ax² + bx + c = 0, where a ≠ 0.</content>
+                                </card>
+                                <card type="content" title="Methods of Solving">
+                                    <content>1. Factoring: write as (px + q)(rx + s) = 0
+2. Completing the Square: make perfect square trinomial
+3. Quadratic Formula: x = [-b ± √(b² - 4ac)] / 2a
+4. Graphing: find x-intercepts of parabola</content>
+                                </card>
+                                <card type="content" title="The Discriminant">
+                                    <content>Discriminant = b² - 4ac
+If > 0: two real distinct roots
+If = 0: one real repeated root  
+If < 0: two complex conjugate roots
+Helps determine nature of roots without solving.</content>
+                                </card>
+                                <card type="content" title="Factoring Method">
+                                    <content>For x² + bx + c = 0, find two numbers that:
+- Multiply to give c
+- Add to give b
+
+Example: x² + 5x + 6 = 0
+Numbers: 2 and 3 (2×3=6, 2+3=5)
+Solution: (x + 2)(x + 3) = 0
+So x = -2 or x = -3</content>
+                                </card>
+                                <card type="content" title="Quadratic Formula">
+                                    <content>For ax² + bx + c = 0:
+x = [-b ± √(b² - 4ac)] / 2a
+
+This formula works for all quadratic equations and gives exact solutions.</content>
+                                </card>
+                                <card type="quiz" question="What is the discriminant of x² - 4x + 4 = 0?">
+                                    <options>
+                                        <option>16</option>
+                                        <option>4</option>
+                                        <option correct="true">0</option>
+                                        <option>-4</option>
+                                    </options>
+                                </card>
+                            </cards>
+                        </topic>
+                    </topics>
+                </unit>
+                
+                <unit id="geometry" name="Geometry">
+                    <topics>
+                        <topic id="triangles" name="Triangles" icon="mdi:triangle" description="Properties and theorems of triangles">
+                            <cards>
+                                <card type="content" title="Types of Triangles">
+                                    <content>By sides:
+- Equilateral: all sides equal
+- Isosceles: two sides equal
+- Scalene: all sides different
+
+By angles:
+- Acute: all angles < 90°
+- Right: one angle = 90°
+- Obtuse: one angle > 90°</content>
+                                </card>
+                                <card type="content" title="Triangle Properties">
+                                    <content>1. Sum of interior angles = 180°
+2. Exterior angle = sum of two non-adjacent interior angles
+3. Sum of any two sides > third side (Triangle Inequality)
+4. Largest angle is opposite longest side</content>
+                                </card>
+                                <card type="content" title="Congruence Rules">
+                                    <content>Two triangles are congruent if:
+SSS: all three sides equal
+SAS: two sides and included angle equal
+ASA: two angles and included side equal
+AAS: two angles and non-included side equal
+RHS: right angle, hypotenuse, and one side equal</content>
+                                </card>
+                                <card type="content" title="Similarity">
+                                    <content>Two triangles are similar if:
+AAA: all angles equal
+SSS: all sides proportional
+SAS: two sides proportional and included angle equal
+
+Similar triangles have same shape but different size.</content>
+                                </card>
+                                <card type="content" title="Pythagorean Theorem">
+                                    <content>In a right triangle: a² + b² = c²
+where c is hypotenuse, a and b are other two sides.
+
+This theorem helps find unknown side when two sides are known.</content>
+                                </card>
+                                <card type="quiz" question="In a triangle, if two angles are 60° and 70°, what is the third angle?">
+                                    <options>
+                                        <option>40°</option>
+                                        <option>45°</option>
+                                        <option correct="true">50°</option>
+                                        <option>55°</option>
+                                    </options>
+                                </card>
+                            </cards>
+                        </topic>
+                    </topics>
+                </unit>
+            </units>
+        </subject>
+        
+        <!-- Chemistry Subject -->
+        <subject id="chemistry" name="Chemistry">
+            <units>
+                <unit id="atomic_structure" name="Atomic Structure">
+                    <topics>
+                        <topic id="atoms" name="Atoms and Molecules" icon="mdi:atom" description="Basic building blocks of matter">
+                            <cards>
+                                <card type="content" title="What is an Atom?">
+                                    <content>An atom is the smallest unit of matter that retains the properties of an element. It consists of a nucleus (protons and neutrons) surrounded by electrons.</content>
+                                </card>
+                                <card type="content" title="Subatomic Particles">
+                                    <content>Proton: positive charge (+1), mass ≈ 1 amu, in nucleus
+Neutron: no charge (0), mass ≈ 1 amu, in nucleus  
+Electron: negative charge (-1), mass ≈ 1/1840 amu, orbits nucleus
+
+amu = atomic mass unit</content>
+                                </card>
+                                <card type="content" title="Atomic Number and Mass">
+                                    <content>Atomic Number (Z) = number of protons = number of electrons (in neutral atom)
+Mass Number (A) = number of protons + number of neutrons
+Isotopes: atoms with same atomic number but different mass numbers</content>
+                                </card>
+                                <card type="content" title="Electronic Configuration">
+                                    <content>Electrons occupy energy levels (shells) around nucleus:
+K shell (n=1): maximum 2 electrons
+L shell (n=2): maximum 8 electrons
+M shell (n=3): maximum 18 electrons
+Electrons fill lower energy levels first.</content>
+                                </card>
+                                <card type="content" title="Molecules and Compounds">
+                                    <content>Molecule: two or more atoms bonded together
+Compound: substance made of different types of atoms
+Element: substance made of only one type of atom
+Chemical formula shows types and numbers of atoms in compound</content>
+                                </card>
+                                <card type="quiz" question="What is the maximum number of electrons in the L shell?">
+                                    <options>
+                                        <option>2</option>
+                                        <option correct="true">8</option>
+                                        <option>18</option>
+                                        <option>32</option>
+                                    </options>
+                                </card>
+                            </cards>
+                        </topic>
+                    </topics>
+                </unit>
+            </units>
+        </subject>
+    </subjects>
+</learning_data>
+
+<!-- 
+Instructions for adding new content:
+
+1. Each subject should have a unique id and name
+2. Each unit belongs to a subject and has unique id within that subject
+3. Each topic belongs to a unit and has:
+   - unique id within the unit
+   - name (display name)
+   - icon (iconify icon name, e.g., "mdi:atom")
+   - description (short description)
+
+4. Cards structure:
+   - Content cards: type="content", title, content
+   - Quiz cards: type="quiz", question, options with one marked correct="true"
+   
+5. Content formatting:
+   - Use \n for line breaks in content
+   - Keep content concise but informative
+   - Include definitions, types, characteristics, examples
+   - Follow pattern: 5 content cards, then 1 quiz card
+
+6. Icons:
+   - Use Material Design Icons (mdi:icon-name)
+   - Choose relevant icons for each topic
+   - Available at: https://icon-sets.iconify.design/mdi/
+
+7. Quiz questions:
+   - Test understanding of previous 5 cards
+   - Make options clear and distinct
+   - Only one correct answer per question
+   - Mark correct option with correct="true"
+
+8. File location: https://raw.githubusercontent.com/xchirxg/xml/main/learning_data.xml
+-->
