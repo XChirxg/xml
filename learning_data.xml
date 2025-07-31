@@ -1,241 +1,299 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<courses>
+<learning_data>
     <!-- Mathematics Subject -->
-    <subject name="Mathematics" id="math">
-        <unit name="Algebra" id="algebra">
-            <topic name="Linear Equations" id="linear_equations">
-                <card type="info">
-                    <title>Introduction to Linear Equations</title>
-                    <content>A linear equation is a mathematical equation that describes a straight line when graphed. It has the general form y = mx + b, where m is the slope and b is the y-intercept.</content>
+    <subject name="Mathematics">
+        <!-- Algebra Unit -->
+        <unit name="Algebra">
+            <!-- Linear Equations Topic -->
+            <topic name="Linear Equations">
+                <card title="Introduction to Linear Equations">
+                    Linear equations are mathematical expressions that represent straight lines when graphed on a coordinate plane. They are fundamental in algebra and have numerous real-world applications.
                 </card>
-                <card type="info">
-                    <title>Types of Linear Equations</title>
-                    <content>There are three main forms: Standard Form (Ax + By = C), Slope-intercept Form (y = mx + b), and Point-slope Form (y - y₁ = m(x - x₁)).</content>
+                <card title="What is a Linear Equation?">
+                    A linear equation is an algebraic equation where each term is either a constant or the product of a constant and a single variable. The general form is ax + b = 0, where 'a' and 'b' are constants and 'x' is the variable.
                 </card>
-                <card type="info">
-                    <title>Solving Linear Equations</title>
-                    <content>To solve a linear equation, isolate the variable by performing inverse operations on both sides of the equation. Always maintain equality by doing the same operation to both sides.</content>
+                <card title="Standard Form">
+                    The standard form of a linear equation is written as ax + by = c, where a, b, and c are constants (integers), and a and b are not both zero. This form is useful for graphing and solving systems of equations.
                 </card>
-                <card type="info">
-                    <title>Graphing Linear Equations</title>
-                    <content>Linear equations graph as straight lines. The slope determines steepness and direction, while the y-intercept shows where the line crosses the y-axis.</content>
+                <card title="Slope-Intercept Form">
+                    The slope-intercept form is y = mx + b, where 'm' represents the slope of the line and 'b' represents the y-intercept (where the line crosses the y-axis). This form makes it easy to identify the slope and y-intercept directly.
                 </card>
-                <card type="info">
-                    <title>Applications</title>
-                    <content>Linear equations are used in real-world scenarios like calculating costs, distance-time relationships, and business profit models.</content>
+                <card title="Point-Slope Form">
+                    The point-slope form is y - y₁ = m(x - x₁), where (x₁, y₁) is a known point on the line and 'm' is the slope. This form is particularly useful when you know a point on the line and its slope.
                 </card>
+                
+                <quiz question="What is the slope-intercept form of a linear equation?" correct="0">
+                    <option>y = mx + b</option>
+                    <option>ax + by = c</option>
+                    <option>y - y₁ = m(x - x₁)</option>
+                    <option>x = my + b</option>
+                </quiz>
+                
+                <card title="Finding the Slope">
+                    The slope of a line passing through two points (x₁, y₁) and (x₂, y₂) is calculated using the formula: m = (y₂ - y₁) / (x₂ - x₁). The slope represents the rate of change or steepness of the line.
+                </card>
+                <card title="Y-Intercept">
+                    The y-intercept is the point where the line crosses the y-axis. It occurs when x = 0. In the slope-intercept form y = mx + b, the y-intercept is simply the value of 'b'.
+                </card>
+                <card title="X-Intercept">
+                    The x-intercept is the point where the line crosses the x-axis. It occurs when y = 0. To find it, substitute y = 0 into the equation and solve for x.
+                </card>
+                <card title="Graphing Linear Equations">
+                    To graph a linear equation, you can use various methods: plot two points and draw a line through them, use the slope and y-intercept, or find the x and y intercepts and connect them.
+                </card>
+                <card title="Real-World Applications">
+                    Linear equations are used to model relationships in business (profit/loss), science (temperature conversion), economics (supply/demand), and many other fields where there's a constant rate of change.
+                </card>
+                
+                <quiz question="If a line passes through points (2, 3) and (4, 7), what is its slope?" correct="2">
+                    <option>1</option>
+                    <option>3</option>
+                    <option>2</option>
+                    <option>4</option>
+                </quiz>
             </topic>
             
-            <topic name="Quadratic Equations" id="quadratic_equations">
-                <card type="info">
-                    <title>What are Quadratic Equations?</title>
-                    <content>A quadratic equation is a polynomial equation of degree 2, with the standard form ax² + bx + c = 0, where a ≠ 0.</content>
+            <!-- Quadratic Equations Topic -->
+            <topic name="Quadratic Equations">
+                <card title="Definition of Quadratic Equations">
+                    A quadratic equation is a polynomial equation of degree 2, meaning the highest power of the variable is 2. The general form is ax² + bx + c = 0, where a ≠ 0.
                 </card>
-                <card type="info">
-                    <title>The Quadratic Formula</title>
-                    <content>The quadratic formula x = (-b ± √(b² - 4ac)) / 2a can solve any quadratic equation. The discriminant (b² - 4ac) determines the nature of roots.</content>
+                <card title="Types of Quadratic Equations">
+                    Quadratic equations can be classified as: Complete (has all three terms), Incomplete (missing the linear or constant term), Pure (only has the quadratic and constant terms), or Monic (where a = 1).
                 </card>
-                <card type="info">
-                    <title>Factoring Method</title>
-                    <content>Many quadratic equations can be solved by factoring into two binomials. Find two numbers that multiply to 'ac' and add to 'b'.</content>
+                <card title="The Discriminant">
+                    The discriminant (Δ = b² - 4ac) determines the nature of roots: If Δ > 0, there are two distinct real roots; if Δ = 0, there's one repeated real root; if Δ < 0, there are two complex roots.
                 </card>
-                <card type="info">
-                    <title>Completing the Square</title>
-                    <content>This method involves creating a perfect square trinomial by adding and subtracting the same value to complete the square.</content>
+                <card title="Factoring Method">
+                    Some quadratic equations can be solved by factoring the expression into two binomials. For example, x² - 5x + 6 = 0 can be factored as (x - 2)(x - 3) = 0.
                 </card>
-                <card type="info">
-                    <title>Graphing Parabolas</title>
-                    <content>Quadratic equations graph as parabolas. The vertex form y = a(x - h)² + k shows the vertex at (h, k) and whether the parabola opens up or down.</content>
+                <card title="Quadratic Formula">
+                    The quadratic formula x = (-b ± √(b² - 4ac)) / 2a can solve any quadratic equation. It's derived by completing the square on the general form.
                 </card>
+                
+                <quiz question="What is the general form of a quadratic equation?" correct="1">
+                    <option>ax + b = 0</option>
+                    <option>ax² + bx + c = 0</option>
+                    <option>ax³ + bx² + cx + d = 0</option>
+                    <option>y = mx + b</option>
+                </quiz>
+                
+                <card title="Completing the Square">
+                    This method involves manipulating the equation to create a perfect square trinomial. It's useful for solving equations and converting to vertex form.
+                </card>
+                <card title="Graphing Quadratics">
+                    Quadratic equations graph as parabolas. The vertex is at x = -b/2a, and the parabola opens upward if a > 0 or downward if a < 0.
+                </card>
+                <card title="Vertex Form">
+                    The vertex form is y = a(x - h)² + k, where (h, k) is the vertex of the parabola. This form makes it easy to identify the vertex and transformations.
+                </card>
+                <card title="Applications">
+                    Quadratic equations model projectile motion, profit maximization, optimization problems, and any situation involving squared relationships.
+                </card>
+                <card title="Sum and Product of Roots">
+                    For equation ax² + bx + c = 0, the sum of roots is -b/a and the product of roots is c/a. These relationships are known as Vieta's formulas.
+                </card>
+                
+                <quiz question="What does the discriminant tell us about a quadratic equation?" correct="0">
+                    <option>The nature of the roots</option>
+                    <option>The vertex location</option>
+                    <option>The y-intercept</option>
+                    <option>The axis of symmetry</option>
+                </quiz>
             </topic>
         </unit>
         
-        <unit name="Geometry" id="geometry">
-            <topic name="Triangles" id="triangles">
-                <card type="info">
-                    <title>Types of Triangles</title>
-                    <content>Triangles can be classified by sides: Equilateral (all sides equal), Isosceles (two sides equal), and Scalene (all sides different).</content>
+        <!-- Geometry Unit -->
+        <unit name="Geometry">
+            <topic name="Triangles">
+                <card title="Types of Triangles">
+                    Triangles can be classified by sides (equilateral, isosceles, scalene) or by angles (acute, right, obtuse). Each type has unique properties and applications.
                 </card>
-                <card type="info">
-                    <title>Triangle Angles</title>
-                    <content>The sum of interior angles in any triangle is always 180°. Triangles can also be classified by angles: Acute, Right, and Obtuse.</content>
+                <card title="Triangle Inequality">
+                    The triangle inequality states that the sum of the lengths of any two sides of a triangle must be greater than the length of the third side.
                 </card>
-                <card type="info">
-                    <title>Pythagorean Theorem</title>
-                    <content>In a right triangle, a² + b² = c², where c is the hypotenuse and a, b are the other two sides. This fundamental theorem has countless applications.</content>
+                <card title="Pythagorean Theorem">
+                    In a right triangle, the square of the hypotenuse equals the sum of squares of the other two sides: a² + b² = c².
                 </card>
-                <card type="info">
-                    <title>Triangle Congruence</title>
-                    <content>Triangles are congruent if they have the same shape and size. Congruence can be proven using SSS, SAS, ASA, AAS, or HL postulates.</content>
+                <card title="Area Formulas">
+                    The area of a triangle can be calculated using: ½ × base × height, Heron's formula, or ½ab sin(C) where a and b are sides and C is the included angle.
                 </card>
-                <card type="info">
-                    <title>Triangle Similarity</title>
-                    <content>Similar triangles have the same shape but different sizes. Their corresponding angles are equal and corresponding sides are proportional.</content>
+                <card title="Congruence and Similarity">
+                    Triangles are congruent if they have the same size and shape. They're similar if they have the same shape but different sizes, with proportional corresponding sides.
                 </card>
+                
+                <quiz question="What is the Pythagorean theorem?" correct="2">
+                    <option>a + b = c</option>
+                    <option>a² + b = c²</option>
+                    <option>a² + b² = c²</option>
+                    <option>a × b = c</option>
+                </quiz>
             </topic>
         </unit>
     </subject>
     
     <!-- Physics Subject -->
-    <subject name="Physics" id="physics">
-        <unit name="Mechanics" id="mechanics">
-            <topic name="Motion" id="motion">
-                <card type="info">
-                    <title>Types of Motion</title>
-                    <content>Motion can be linear (straight line), rotational (around an axis), oscillatory (back and forth), or random (unpredictable path).</content>
+    <subject name="Physics">
+        <unit name="Mechanics">
+            <topic name="Motion">
+                <card title="Types of Motion">
+                    Motion can be classified as linear (straight line), rotational (around an axis), oscillatory (back and forth), or random (unpredictable path). Each type has specific characteristics and equations.
                 </card>
-                <card type="info">
-                    <title>Distance vs Displacement</title>
-                    <content>Distance is the total path traveled (scalar), while displacement is the straight-line distance from start to end point (vector).</content>
+                <card title="Distance vs Displacement">
+                    Distance is the total length of path traveled (scalar quantity), while displacement is the straight-line distance from start to finish point (vector quantity with direction).
                 </card>
-                <card type="info">
-                    <title>Speed vs Velocity</title>
-                    <content>Speed is distance traveled per unit time (scalar), while velocity is displacement per unit time (vector) and includes direction.</content>
+                <card title="Speed vs Velocity">
+                    Speed is the rate of change of distance with time (scalar), while velocity is the rate of change of displacement with time (vector with direction).
                 </card>
-                <card type="info">
-                    <title>Acceleration</title>
-                    <content>Acceleration is the rate of change of velocity. It can be positive (speeding up), negative (slowing down), or zero (constant velocity).</content>
+                <card title="Acceleration">
+                    Acceleration is the rate of change of velocity with respect to time. It's measured in m/s² and can be positive (speeding up) or negative (slowing down).
                 </card>
-                <card type="info">
-                    <title>Equations of Motion</title>
-                    <content>The three kinematic equations relate displacement, velocity, acceleration, and time: v = u + at, s = ut + ½at², and v² = u² + 2as.</content>
+                <card title="Equations of Motion">
+                    The three kinematic equations relate initial velocity (u), final velocity (v), acceleration (a), time (t), and displacement (s): v = u + at, s = ut + ½at², v² = u² + 2as.
                 </card>
+                
+                <quiz question="What is the difference between speed and velocity?" correct="1">
+                    <option>No difference</option>
+                    <option>Velocity includes direction</option>
+                    <option>Speed is always faster</option>
+                    <option>Velocity is measured in different units</option>
+                </quiz>
+                
+                <card title="Uniform Motion">
+                    Uniform motion occurs when an object travels equal distances in equal intervals of time, meaning constant velocity and zero acceleration.
+                </card>
+                <card title="Non-Uniform Motion">
+                    Non-uniform motion involves changing velocity over time, resulting in non-zero acceleration. Most real-world motion is non-uniform.
+                </card>
+                <card title="Relative Motion">
+                    Motion is relative to the observer's frame of reference. An object can appear stationary to one observer but moving to another.
+                </card>
+                <card title="Graphical Representation">
+                    Motion can be represented using position-time, velocity-time, and acceleration-time graphs. The slope and area under curves provide important information.
+                </card>
+                <card title="Free Fall">
+                    Free fall is motion under gravity alone, with acceleration g = 9.8 m/s² downward (neglecting air resistance). All objects fall at the same rate regardless of mass.
+                </card>
+                
+                <quiz question="What is the acceleration due to gravity on Earth?" correct="1">
+                    <option>9.8 m/s</option>
+                    <option>9.8 m/s²</option>
+                    <option>98 m/s²</option>
+                    <option>0.98 m/s²</option>
+                </quiz>
             </topic>
             
-            <topic name="Forces" id="forces">
-                <card type="info">
-                    <title>Newton's First Law</title>
-                    <content>An object at rest stays at rest, and an object in motion stays in motion at constant velocity, unless acted upon by an unbalanced force.</content>
+            <topic name="Forces">
+                <card title="Newton's First Law">
+                    An object at rest stays at rest, and an object in motion stays in motion at constant velocity, unless acted upon by an unbalanced force. This is the law of inertia.
                 </card>
-                <card type="info">
-                    <title>Newton's Second Law</title>
-                    <content>The acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass: F = ma.</content>
+                <card title="Newton's Second Law">
+                    The acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass: F = ma.
                 </card>
-                <card type="info">
-                    <title>Newton's Third Law</title>
-                    <content>For every action, there is an equal and opposite reaction. Forces always occur in pairs acting on different objects.</content>
+                <card title="Newton's Third Law">
+                    For every action, there is an equal and opposite reaction. Forces always occur in pairs between interacting objects.
                 </card>
-                <card type="info">
-                    <title>Types of Forces</title>
-                    <content>Common forces include gravitational, normal, friction, tension, applied, and elastic forces. Each has unique characteristics and applications.</content>
+                <card title="Types of Forces">
+                    Forces can be contact forces (friction, normal, tension) or non-contact forces (gravitational, electric, magnetic). Each has specific characteristics and applications.
                 </card>
-                <card type="info">
-                    <title>Free Body Diagrams</title>
-                    <content>Free body diagrams show all forces acting on an object. They help analyze motion and solve force problems systematically.</content>
+                <card title="Force Diagrams">
+                    Free body diagrams show all forces acting on an object. They help analyze motion and solve problems involving multiple forces.
                 </card>
+                
+                <quiz question="What does Newton's second law state?" correct="0">
+                    <option>F = ma</option>
+                    <option>F = mv</option>
+                    <option>F = m/a</option>
+                    <option>F = ma²</option>
+                </quiz>
+            </topic>
+        </unit>
+        
+        <unit name="Thermodynamics">
+            <topic name="Heat and Temperature">
+                <card title="Difference Between Heat and Temperature">
+                    Temperature is a measure of average kinetic energy of particles, while heat is the transfer of thermal energy between objects at different temperatures.
+                </card>
+                <card title="Temperature Scales">
+                    Common temperature scales include Celsius (°C), Fahrenheit (°F), and Kelvin (K). Kelvin is the absolute temperature scale starting from absolute zero.
+                </card>
+                <card title="Heat Transfer Methods">
+                    Heat transfers through conduction (direct contact), convection (fluid movement), and radiation (electromagnetic waves). Each method has different characteristics.
+                </card>
+                <card title="Specific Heat Capacity">
+                    The amount of heat energy required to raise the temperature of 1 kg of a substance by 1°C. Different materials have different specific heat capacities.
+                </card>
+                <card title="Thermal Expansion">
+                    Most materials expand when heated and contract when cooled. This property has important applications in engineering and construction.
+                </card>
+                
+                <quiz question="What is the SI unit of temperature?" correct="2">
+                    <option>Celsius</option>
+                    <option>Fahrenheit</option>
+                    <option>Kelvin</option>
+                    <option>Joule</option>
+                </quiz>
             </topic>
         </unit>
     </subject>
     
     <!-- Chemistry Subject -->
-    <subject name="Chemistry" id="chemistry">
-        <unit name="Atomic Structure" id="atomic_structure">
-            <topic name="Atoms" id="atoms">
-                <card type="info">
-                    <title>Structure of an Atom</title>
-                    <content>An atom consists of a nucleus (containing protons and neutrons) surrounded by electrons in energy levels or shells.</content>
+    <subject name="Chemistry">
+        <unit name="Atomic Structure">
+            <topic name="Atoms and Elements">
+                <card title="What is an Atom?">
+                    An atom is the smallest unit of an element that retains the chemical properties of that element. It consists of protons, neutrons, and electrons.
                 </card>
-                <card type="info">
-                    <title>Subatomic Particles</title>
-                    <content>Protons have positive charge, electrons have negative charge, and neutrons are neutral. Protons and neutrons have nearly equal mass, much greater than electrons.</content>
+                <card title="Atomic Structure">
+                    Atoms have a nucleus containing protons and neutrons, surrounded by electrons in shells or energy levels. The nucleus is extremely small but contains most of the atom's mass.
                 </card>
-                <card type="info">
-                    <title>Atomic Number and Mass</title>
-                    <content>Atomic number equals the number of protons and defines the element. Atomic mass is the average mass of all isotopes of an element.</content>
+                <card title="Atomic Number">
+                    The atomic number equals the number of protons in an atom's nucleus. It defines the element and determines its position in the periodic table.
                 </card>
-                <card type="info">
-                    <title>Electron Configuration</title>
-                    <content>Electrons occupy specific energy levels and subshells (s, p, d, f) following the aufbau principle, Pauli exclusion principle, and Hund's rule.</content>
+                <card title="Mass Number">
+                    The mass number is the sum of protons and neutrons in an atom's nucleus. Isotopes of an element have the same atomic number but different mass numbers.
                 </card>
-                <card type="info">
-                    <title>Isotopes</title>
-                    <content>Isotopes are atoms of the same element with different numbers of neutrons. They have identical chemical properties but different physical properties.</content>
+                <card title="Electronic Configuration">
+                    Electrons occupy specific energy levels or shells around the nucleus. The arrangement of electrons determines the chemical properties of elements.
                 </card>
+                
+                <quiz question="What determines the atomic number of an element?" correct="1">
+                    <option>Number of neutrons</option>
+                    <option>Number of protons</option>
+                    <option>Number of electrons</option>
+                    <option>Total mass</option>
+                </quiz>
             </topic>
         </unit>
     </subject>
     
     <!-- Biology Subject -->
-    <subject name="Biology" id="biology">
-        <unit name="Cell Biology" id="cell_biology">
-            <topic name="Cell Structure" id="cell_structure">
-                <card type="info">
-                    <title>Cell Theory</title>
-                    <content>All living things are made of cells, the cell is the basic unit of life, and all cells come from pre-existing cells.</content>
+    <subject name="Biology">
+        <unit name="Cell Biology">
+            <topic name="Cell Structure">
+                <card title="What is a Cell?">
+                    A cell is the basic structural and functional unit of all living organisms. All life forms are composed of one or more cells.
                 </card>
-                <card type="info">
-                    <title>Prokaryotic vs Eukaryotic</title>
-                    <content>Prokaryotic cells lack a membrane-bound nucleus (bacteria), while eukaryotic cells have a nucleus and organelles (plants, animals, fungi).</content>
+                <card title="Types of Cells">
+                    There are two main types: prokaryotic cells (no nucleus, like bacteria) and eukaryotic cells (with nucleus, like plant and animal cells).
                 </card>
-                <card type="info">
-                    <title>Cell Membrane</title>
-                    <content>The cell membrane is a phospholipid bilayer that controls what enters and exits the cell through selective permeability.</content>
+                <card title="Cell Membrane">
+                    The cell membrane is a selectively permeable barrier that controls what enters and exits the cell. It's made of a phospholipid bilayer with embedded proteins.
                 </card>
-                <card type="info">
-                    <title>Organelles</title>
-                    <content>Key organelles include nucleus (control center), mitochondria (powerhouse), endoplasmic reticulum (transport), and Golgi apparatus (packaging).</content>
+                <card title="Nucleus">
+                    The nucleus is the control center of eukaryotic cells, containing DNA and controlling cellular activities like growth, reproduction, and metabolism.
                 </card>
-                <card type="info">
-                    <title>Cell Transport</title>
-                    <content>Materials move across membranes by passive transport (diffusion, osmosis) or active transport (requiring energy to move against gradients).</content>
+                <card title="Organelles">
+                    Organelles are specialized structures within cells that perform specific functions, such as mitochondria (energy production) and ribosomes (protein synthesis).
                 </card>
+                
+                <quiz question="What is the main difference between prokaryotic and eukaryotic cells?" correct="0">
+                    <option>Presence of nucleus</option>
+                    <option>Cell size</option>
+                    <option>Cell membrane</option>
+                    <option>DNA content</option>
+                </quiz>
             </topic>
         </unit>
     </subject>
-    
-    <!-- English Subject -->
-    <subject name="English" id="english">
-        <unit name="Grammar" id="grammar">
-            <topic name="Parts of Speech" id="parts_of_speech">
-                <card type="info">
-                    <title>Nouns</title>
-                    <content>Nouns are words that name persons, places, things, or ideas. They can be common or proper, concrete or abstract, countable or uncountable.</content>
-                </card>
-                <card type="info">
-                    <title>Pronouns</title>
-                    <content>Pronouns replace nouns to avoid repetition. Types include personal, possessive, reflexive, demonstrative, interrogative, and relative pronouns.</content>
-                </card>
-                <card type="info">
-                    <title>Verbs</title>
-                    <content>Verbs express actions, states, or occurrences. They can be main verbs, auxiliary verbs, or modal verbs, and change form for tense, mood, and voice.</content>
-                </card>
-                <card type="info">
-                    <title>Adjectives</title>
-                    <content>Adjectives describe or modify nouns and pronouns. They can show quality, size, age, color, origin, material, or purpose.</content>
-                </card>
-                <card type="info">
-                    <title>Adverbs</title>
-                    <content>Adverbs modify verbs, adjectives, or other adverbs. They often answer how, when, where, or to what extent something happens.</content>
-                </card>
-            </topic>
-        </unit>
-    </subject>
-    
-    <!-- History Subject -->
-    <subject name="History" id="history">
-        <unit name="Ancient Civilizations" id="ancient_civilizations">
-            <topic name="Egyptian Civilization" id="egyptian_civilization">
-                <card type="info">
-                    <title>Geography and the Nile</title>
-                    <content>Ancient Egypt developed along the Nile River, which provided water, fertile soil, and transportation. The predictable flooding cycle enabled agriculture.</content>
-                </card>
-                <card type="info">
-                    <title>Pharaohs and Government</title>
-                    <content>Egypt was ruled by pharaohs who were considered divine. The government was highly centralized with a complex bureaucracy of officials and scribes.</content>
-                </card>
-                <card type="info">
-                    <title>Pyramids and Architecture</title>
-                    <content>Egyptians built magnificent pyramids as tombs for pharaohs. These structures demonstrate advanced engineering and mathematical knowledge.</content>
-                </card>
-                <card type="info">
-                    <title>Religion and Afterlife</title>
-                    <content>Egyptians believed in many gods and goddesses and had elaborate beliefs about the afterlife, leading to mummification and tomb construction.</content>
-                </card>
-                <card type="info">
-                    <title>Hieroglyphics</title>
-                    <content>Egyptian writing system using pictures and symbols. The Rosetta Stone was key to deciphering hieroglyphics in modern times.</content>
-                </card>
-            </topic>
-        </unit>
-    </subject>
-</courses>
+</learning_data>
